@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浜名湖うなぎ | 日本が誇る絶品うなぎの産地</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 100svh;
+      min-height: 500px;
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,.35) 0%, rgba(0,0,0,.55) 100%);
+    }
+    .hero-content { position: relative; z-index: 1; padding: 1.5rem; }
+    .hero-content .label {
+      font-size: .8rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+    }
+    .hero-content h1 {
+      font-size: clamp(2rem, 6vw, 3.8rem);
+      line-height: 1.3;
+      letter-spacing: .1em;
+      margin-bottom: 1.2rem;
+    }
+    .hero-content p {
+      font-size: clamp(.95rem, 2vw, 1.1rem);
+      color: rgba(255,255,255,.85);
+      max-width: 520px;
+      margin: 0 auto 2rem;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .about-grid img { height: 360px; border-radius: 8px; }
+    .about-text h2 { font-size: 1.6rem; margin-bottom: 1rem; line-height: 1.4; }
+    .about-text p { color: var(--color-muted); margin-bottom: 1.5rem; }
+    @media (max-width: 700px) {
+      .about-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Nav cards */
+    .nav-card {
+      display: block;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      color: #fff;
+    }
+    .nav-card img { height: 220px; transition: transform .4s; }
+    .nav-card:hover img { transform: scale(1.05); }
+    .nav-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.65) 0%, transparent 60%);
+      display: flex; flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.2rem;
+    }
+    .nav-card-overlay h3 { font-size: 1.05rem; letter-spacing: .05em; }
+    .nav-card-overlay span { font-size: .8rem; color: var(--color-accent); margin-top: .2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="nav-logo" href="index.html">浜名湖うなぎ</a>
+      <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="history.html">歴史・特徴</a></li>
+        <li><a href="shops.html">お店紹介</a></li>
+        <li><a href="dishes.html">料理紹介</a></li>
+        <li><a href="access.html">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=1600&q=80" alt="うなぎ料理">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="label">Hamanako Unagi</p>
+        <h1>日本が誇る<br>絶品うなぎの産地</h1>
+        <p>静岡県・浜名湖。豊かな水と温暖な気候が育む、<br>日本一のうなぎ産地へようこそ。</p>
+        <a href="history.html" class="btn">詳しく見る</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section">
+      <div class="section-inner about-grid">
+        <img src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800&q=80" alt="浜名湖の風景">
+        <div class="about-text">
+          <h2>浜名湖うなぎとは</h2>
+          <p>浜名湖は静岡県西部に位置する汽水湖。明治時代から続くうなぎ養殖の歴史を持ち、日本のうなぎ文化を支えてきた産地です。</p>
+          <p>温暖な気候と清らかな水、そして職人たちの長年の技術が、他では味わえない極上のうなぎを生み出しています。</p>
+          <a href="history.html" class="btn">歴史・特徴を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation cards -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title center">浜名湖うなぎを楽しむ</h2>
+        <div class="card-grid">
+          <a href="history.html" class="nav-card">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="歴史">
+            <div class="nav-card-overlay">
+              <h3>歴史・特徴</h3>
+              <span>History &amp; Features →</span>
+            </div>
+          </a>
+          <a href="shops.html" class="nav-card">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="お店">
+            <div class="nav-card-overlay">
+              <h3>お店紹介</h3>
+              <span>Restaurants →</span>
+            </div>
+          </a>
+          <a href="dishes.html" class="nav-card">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" alt="料理">
+            <div class="nav-card-overlay">
+              <h3>料理紹介</h3>
+              <span>Dishes →</span>
+            </div>
+          </a>
+          <a href="access.html" class="nav-card">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="アクセス">
+            <div class="nav-card-overlay">
+              <h3>アクセス</h3>
+              <span>Access &amp; Sightseeing →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 浜名湖うなぎ観光案内 | <a href="access.html">アクセス</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

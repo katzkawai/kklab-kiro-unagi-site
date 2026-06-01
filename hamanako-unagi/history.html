@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歴史・特徴 | 浜名湖うなぎ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .history-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+    .history-block.reverse { direction: rtl; }
+    .history-block.reverse > * { direction: ltr; }
+    .history-block img { height: 300px; border-radius: 8px; }
+    .history-text h3 { font-size: 1.2rem; margin-bottom: .8rem; color: var(--color-accent-dark); }
+    .history-text p { color: var(--color-muted); }
+    .history-text .year {
+      font-size: .8rem; letter-spacing: .1em;
+      color: var(--color-accent); margin-bottom: .4rem;
+    }
+    @media (max-width: 700px) {
+      .history-block, .history-block.reverse { grid-template-columns: 1fr; direction: ltr; }
+    }
+
+    /* Features grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border: 1px solid var(--color-border);
+    }
+    .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .feature-card h3 { font-size: 1rem; margin-bottom: .6rem; }
+    .feature-card p { font-size: .875rem; color: var(--color-muted); }
+    @media (max-width: 700px) {
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="nav-logo" href="index.html">浜名湖うなぎ</a>
+      <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="history.html">歴史・特徴</a></li>
+        <li><a href="shops.html">お店紹介</a></li>
+        <li><a href="dishes.html">料理紹介</a></li>
+        <li><a href="access.html">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div>
+        <h1>歴史・特徴</h1>
+        <p>150年以上続く、浜名湖うなぎ養殖の歩み</p>
+      </div>
+    </div>
+
+    <!-- History -->
+    <section class="section">
+      <div class="section-inner">
+        <h2 class="section-title">浜名湖うなぎの歴史</h2>
+
+        <div class="history-block">
+          <img src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800&q=80" alt="浜名湖">
+          <div class="history-text">
+            <p class="year">1879年（明治12年）</p>
+            <h3>養殖の始まり</h3>
+            <p>服部倉治郎が浜名湖畔で日本初のうなぎ養殖に成功。天然うなぎの稚魚（シラスウナギ）を池で育てる技術を確立し、現代の養殖業の礎を築きました。</p>
+          </div>
+        </div>
+
+        <div class="history-block reverse">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80" alt="養殖池">
+          <div class="history-text">
+            <p class="year">大正〜昭和初期</p>
+            <h3>産業としての発展</h3>
+            <p>養殖技術の改良と鉄道網の整備により、浜名湖うなぎは全国へ流通するようになりました。「浜名湖産」のブランドが確立され、日本一のうなぎ産地として名声を高めていきます。</p>
+          </div>
+        </div>
+
+        <div class="history-block">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="現代の養殖">
+          <div class="history-text">
+            <p class="year">現代</p>
+            <h3>伝統と革新の融合</h3>
+            <p>150年以上の歴史で培われた技術に、最新の水質管理・飼育技術を組み合わせ、安全で高品質なうなぎを安定供給しています。浜名湖ブランドは今も日本のうなぎ文化を牽引しています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title center">浜名湖うなぎが美味しい理由</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💧</div>
+            <h3>豊かな水質</h3>
+            <p>浜名湖は海水と淡水が混じる汽水湖。ミネラル豊富な水がうなぎの成長を促し、身の締まりと旨みを生み出します。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">☀️</div>
+            <h3>温暖な気候</h3>
+            <p>年間平均気温が高く日照時間も長い浜松・浜名湖エリア。うなぎの成育に最適な環境が、肉厚で脂ののった身を育てます。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔪</div>
+            <h3>職人の技術</h3>
+            <p>150年以上受け継がれてきた養殖・調理の技。背開きにして蒸してから焼く「関東風」の調理法が、ふっくらとした食感を生み出します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 浜名湖うなぎ観光案内 | <a href="access.html">アクセス</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

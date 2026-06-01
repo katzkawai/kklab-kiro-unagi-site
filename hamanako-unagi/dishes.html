@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>料理紹介 | 浜名湖うなぎ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .dish-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+    .dish-block:last-child { margin-bottom: 0; }
+    .dish-block.reverse { direction: rtl; }
+    .dish-block.reverse > * { direction: ltr; }
+    .dish-block img { height: 340px; border-radius: 8px; }
+    .dish-text .dish-num {
+      font-size: .75rem;
+      letter-spacing: .2em;
+      color: var(--color-accent);
+      margin-bottom: .5rem;
+    }
+    .dish-text h3 { font-size: 1.5rem; margin-bottom: .3rem; }
+    .dish-text .dish-en { font-size: .85rem; color: var(--color-muted); margin-bottom: 1rem; }
+    .dish-text p { color: var(--color-muted); margin-bottom: 1rem; }
+    .dish-tips {
+      background: #f3f0eb;
+      border-left: 3px solid var(--color-accent);
+      padding: .8rem 1rem;
+      border-radius: 0 4px 4px 0;
+      font-size: .875rem;
+    }
+    .dish-tips strong { color: var(--color-accent-dark); }
+    @media (max-width: 700px) {
+      .dish-block, .dish-block.reverse { grid-template-columns: 1fr; direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="nav-logo" href="index.html">浜名湖うなぎ</a>
+      <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="history.html">歴史・特徴</a></li>
+        <li><a href="shops.html">お店紹介</a></li>
+        <li><a href="dishes.html">料理紹介</a></li>
+        <li><a href="access.html">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div>
+        <h1>料理紹介</h1>
+        <p>浜名湖うなぎで楽しむ、多彩な料理の世界</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-inner">
+        <h2 class="section-title">うなぎ料理の種類</h2>
+
+        <!-- 蒲焼 -->
+        <div class="dish-block">
+          <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&q=80" alt="蒲焼">
+          <div class="dish-text">
+            <p class="dish-num">01</p>
+            <h3>蒲焼</h3>
+            <p class="dish-en">Kabayaki</p>
+            <p>うなぎ料理の王道。背開きにしたうなぎを串に刺し、白焼きにしてから蒸し、甘辛いタレをつけながら焼き上げます。ふっくらとした身と香ばしいタレの香りが食欲をそそります。</p>
+            <div class="dish-tips"><strong>食べ方のポイント：</strong>山椒を少量ふりかけると、うなぎの脂と絶妙にマッチします。</div>
+          </div>
+        </div>
+
+        <!-- 白焼き -->
+        <div class="dish-block reverse">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80" alt="白焼き">
+          <div class="dish-text">
+            <p class="dish-num">02</p>
+            <h3>白焼き</h3>
+            <p class="dish-en">Shirayaki</p>
+            <p>タレを使わず、塩のみで焼き上げるシンプルな調理法。うなぎ本来の旨みと脂の甘みを最大限に引き出します。素材の質が直接味に出るため、上質なうなぎでこそ真価を発揮します。</p>
+            <div class="dish-tips"><strong>食べ方のポイント：</strong>わさびと醤油でいただくのが定番。日本酒との相性も抜群です。</div>
+          </div>
+        </div>
+
+        <!-- うな丼 -->
+        <div class="dish-block">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="うな丼">
+          <div class="dish-text">
+            <p class="dish-num">03</p>
+            <h3>うな丼</h3>
+            <p class="dish-en">Unadon</p>
+            <p>熱々のご飯の上に蒲焼をのせた、うなぎ料理の定番スタイル。タレがご飯に染み込み、うなぎとご飯が一体となった味わいは格別。手軽にうなぎを楽しめる一品です。</p>
+            <div class="dish-tips"><strong>食べ方のポイント：</strong>蓋をして少し蒸らすと、うなぎの香りがご飯全体に広がります。</div>
+          </div>
+        </div>
+
+        <!-- ひつまぶし -->
+        <div class="dish-block reverse">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80" alt="ひつまぶし">
+          <div class="dish-text">
+            <p class="dish-num">04</p>
+            <h3>ひつまぶし</h3>
+            <p class="dish-en">Hitsumabushi</p>
+            <p>細かく刻んだ蒲焼をご飯に混ぜ込んだ名古屋発祥の料理。3〜4通りの食べ方で楽しめるのが特徴で、最後はお茶漬けにして締めるのが定番スタイルです。</p>
+            <div class="dish-tips"><strong>食べ方のポイント：</strong>①そのまま ②薬味と一緒に ③だし茶漬けで、3種の味変を楽しんで。</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 浜名湖うなぎ観光案内 | <a href="access.html">アクセス</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

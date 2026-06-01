@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お店紹介 | 浜名湖うなぎ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .shops-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .shop-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .shop-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .shop-card img { height: 200px; }
+    .shop-body { padding: 1.4rem; }
+    .shop-body h3 { font-size: 1.1rem; margin-bottom: .3rem; }
+    .shop-tag {
+      display: inline-block;
+      font-size: .75rem;
+      background: #f3f0eb;
+      color: var(--color-accent-dark);
+      padding: .2rem .6rem;
+      border-radius: 20px;
+      margin-bottom: .8rem;
+    }
+    .shop-body p { font-size: .875rem; color: var(--color-muted); margin-bottom: 1rem; }
+    .shop-meta { font-size: .8rem; color: var(--color-muted); }
+    .shop-meta span { display: block; margin-bottom: .2rem; }
+    .shop-meta strong { color: var(--color-text); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="nav-logo" href="index.html">浜名湖うなぎ</a>
+      <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="history.html">歴史・特徴</a></li>
+        <li><a href="shops.html">お店紹介</a></li>
+        <li><a href="dishes.html">料理紹介</a></li>
+        <li><a href="access.html">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div>
+        <h1>お店紹介</h1>
+        <p>浜名湖周辺のおすすめうなぎ店</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-inner">
+        <h2 class="section-title">おすすめのお店</h2>
+        <div class="shops-grid">
+
+          <div class="shop-card">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="うなぎ 浜乃家">
+            <div class="shop-body">
+              <h3>うなぎ 浜乃家</h3>
+              <span class="shop-tag">老舗・創業100年</span>
+              <p>明治時代から続く老舗。浜名湖産の厳選うなぎを使い、秘伝のタレで仕上げる蒲焼は絶品。予約必須の人気店。</p>
+              <div class="shop-meta">
+                <span>🕐 <strong>営業時間</strong>：11:00〜14:00 / 17:00〜20:00（火曜定休）</span>
+                <span>💴 <strong>価格帯</strong>：¥3,000〜¥6,000</span>
+                <span>📍 浜松市西区舘山寺町</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80" alt="湖畔亭">
+            <div class="shop-body">
+              <h3>湖畔亭</h3>
+              <span class="shop-tag">湖畔の絶景</span>
+              <p>浜名湖を一望できるロケーションが自慢。白焼きとひつまぶしが特に人気で、観光客にも地元客にも愛される一軒。</p>
+              <div class="shop-meta">
+                <span>🕐 <strong>営業時間</strong>：11:30〜15:00 / 17:30〜21:00（水曜定休）</span>
+                <span>💴 <strong>価格帯</strong>：¥2,500〜¥5,500</span>
+                <span>📍 浜松市西区雄踏町</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" alt="うな源">
+            <div class="shop-body">
+              <h3>うな源</h3>
+              <span class="shop-tag">リーズナブル</span>
+              <p>地元漁師から直接仕入れた新鮮なうなぎをリーズナブルに提供。うな丼からコース料理まで幅広いメニューが揃う。</p>
+              <div class="shop-meta">
+                <span>🕐 <strong>営業時間</strong>：11:00〜21:00（月曜定休）</span>
+                <span>💴 <strong>価格帯</strong>：¥1,800〜¥4,000</span>
+                <span>📍 浜松市北区三ヶ日町</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <img src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80" alt="炭火焼 湖月">
+            <div class="shop-body">
+              <h3>炭火焼 湖月</h3>
+              <span class="shop-tag">炭火焼き専門</span>
+              <p>備長炭でじっくり焼き上げる本格炭火焼きが看板。香ばしい香りと皮のパリッとした食感は他では味わえない逸品。</p>
+              <div class="shop-meta">
+                <span>🕐 <strong>営業時間</strong>：12:00〜15:00 / 18:00〜21:00（木曜定休）</span>
+                <span>💴 <strong>価格帯</strong>：¥3,500〜¥7,000</span>
+                <span>📍 浜松市西区舘山寺町</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 浜名湖うなぎ観光案内 | <a href="access.html">アクセス</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アクセス・観光情報 | 浜名湖うなぎ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .access-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 700px) { .access-grid { grid-template-columns: 1fr; } }
+
+    .transport-list { list-style: none; }
+    .transport-list li {
+      display: flex;
+      gap: 1rem;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .transport-list li:last-child { border-bottom: none; }
+    .transport-icon { font-size: 1.8rem; flex-shrink: 0; width: 2.5rem; text-align: center; }
+    .transport-info h4 { font-size: .95rem; margin-bottom: .3rem; }
+    .transport-info p { font-size: .85rem; color: var(--color-muted); }
+
+    .map-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+    .map-wrap iframe { display: block; width: 100%; height: 360px; border: none; }
+
+    .spots-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 700px) { .spots-grid { grid-template-columns: 1fr; } }
+
+    .spot-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .spot-card img { height: 160px; }
+    .spot-card-body { padding: 1rem; }
+    .spot-card-body h3 { font-size: .95rem; margin-bottom: .4rem; }
+    .spot-card-body p { font-size: .8rem; color: var(--color-muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="nav-logo" href="index.html">浜名湖うなぎ</a>
+      <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="history.html">歴史・特徴</a></li>
+        <li><a href="shops.html">お店紹介</a></li>
+        <li><a href="dishes.html">料理紹介</a></li>
+        <li><a href="access.html">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div>
+        <h1>アクセス・観光情報</h1>
+        <p>浜名湖への行き方と周辺の見どころ</p>
+      </div>
+    </div>
+
+    <!-- Access -->
+    <section class="section">
+      <div class="section-inner">
+        <h2 class="section-title">浜名湖へのアクセス</h2>
+        <div class="access-grid">
+          <ul class="transport-list">
+            <li>
+              <div class="transport-icon">🚄</div>
+              <div class="transport-info">
+                <h4>新幹線・電車</h4>
+                <p>東京駅から東海道新幹線で約90分、浜松駅下車。浜松駅から遠州鉄道またはバスで浜名湖エリアへ約20〜40分。</p>
+              </div>
+            </li>
+            <li>
+              <div class="transport-icon">🚗</div>
+              <div class="transport-info">
+                <h4>車</h4>
+                <p>東名高速道路「浜松西IC」または「三ヶ日IC」から浜名湖エリアへ約10〜20分。湖畔沿いに無料駐車場あり。</p>
+              </div>
+            </li>
+            <li>
+              <div class="transport-icon">🚌</div>
+              <div class="transport-info">
+                <h4>高速バス</h4>
+                <p>東京・名古屋・大阪から浜松駅行きの高速バスが運行。浜松駅からは路線バスで各観光スポットへアクセス可能。</p>
+              </div>
+            </li>
+            <li>
+              <div class="transport-icon">✈️</div>
+              <div class="transport-info">
+                <h4>飛行機</h4>
+                <p>静岡空港（富士山静岡空港）から車で約60分。または名古屋空港・中部国際空港から車で約90分。</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103498.5!2d137.5!3d34.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ad3b5e5b5b5b5%3A0x0!2z5rWm5ZCN5rmW!5e0!3m2!1sja!2sjp!4v1"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="浜名湖の地図">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sightseeing -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title">周辺の観光スポット</h2>
+        <div class="spots-grid">
+
+          <div class="spot-card">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="舘山寺温泉">
+            <div class="spot-card-body">
+              <h3>舘山寺温泉</h3>
+              <p>浜名湖畔に湧く温泉地。湖を望む露天風呂が人気で、うなぎ料理と温泉を一緒に楽しめる旅館が多数。</p>
+            </div>
+          </div>
+
+          <div class="spot-card">
+            <img src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80" alt="浜名湖遊覧船">
+            <div class="spot-card-body">
+              <h3>浜名湖遊覧船</h3>
+              <p>湖上から浜名湖の絶景を楽しめる遊覧船。季節によって変わる湖の表情と、うなぎ養殖場を水上から見学できます。</p>
+            </div>
+          </div>
+
+          <div class="spot-card">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="浜名湖ガーデンパーク">
+            <div class="spot-card-body">
+              <h3>浜名湖ガーデンパーク</h3>
+              <p>四季折々の花が咲く広大な公園。家族連れにも人気で、うなぎランチの後の散策スポットとして最適です。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 浜名湖うなぎ観光案内 | <a href="access.html">アクセス</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
